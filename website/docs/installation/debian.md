@@ -10,13 +10,13 @@ This document provides the necessary steps for installation of TeslaMate on a va
 Click on the following items to view detailed installation steps.
 
 <details>
-  <summary>Postgres (v12+)</summary>
+  <summary>Postgres (v13+)</summary>
 
 ```bash
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" | sudo tee  /etc/apt/sources.list.d/pgdg.list
 sudo apt-get update
-sudo apt-get install -y postgresql-12 postgresql-client-12
+sudo apt-get install -y postgresql-13 postgresql-client-13
 ```
 
 Source: [postgresql.org/download](https://www.postgresql.org/download/)
